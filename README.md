@@ -21,3 +21,12 @@ go run -mod=mod entgo.io/ent/cmd/ent init Temple
 # 在ent目录下创建一个公共参数专用文件夹
 cd ent && mkdir mixins && cd mixins
 ```
+
+## 创建模板
+
+```bash
+# 在ent目录下创建一个模板专用文件夹
+cd ent && mkdir template && cd template
+# 这个模板主要用于分页查询处理，如果有其他需要，请自定义模板
+touch  mutation_input.tmpl
+```
