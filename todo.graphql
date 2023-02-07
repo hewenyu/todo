@@ -1,0 +1,36 @@
+interface Node {
+  id: ID!
+}
+
+"""Maps a Time GraphQL scalar to a Go time.Time struct."""
+scalar Time
+
+"""
+Define a Relay Cursor type:
+https://relay.dev/graphql/connections.htm#sec-Cursor
+"""
+scalar Cursor
+
+"""
+Define an enumeration type and map it later to Ent enum (Go type).
+https://graphql.org/learn/schema/#enumeration-types
+"""
+enum TempleStatus {
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum UserStatus {
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum TempleDeleteAt {
+  ENABLE
+  DISABLE
+}
+
+enum UserDeleteAt {
+  ENABLE
+  DISABLE
+}
