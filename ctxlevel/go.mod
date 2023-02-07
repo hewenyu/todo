@@ -11,6 +11,7 @@ require (
 	github.com/99designs/gqlgen v0.17.24
 	github.com/alecthomas/kong v0.7.1
 	github.com/hewenyu/todo v0.0.0-00010101000000-000000000000
+	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/vektah/gqlparser/v2 v2.5.1
 )
 

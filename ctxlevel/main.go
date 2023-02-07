@@ -2,9 +2,10 @@ package main
 
 import (
 	"context"
-	"database/sql"
 	"log"
 	"net/http"
+
+	"entgo.io/ent/dialect/sql"
 
 	"ariga.io/entcache"
 	"entgo.io/contrib/entgql"
@@ -17,6 +18,8 @@ import (
 	"github.com/hewenyu/todo/ent"
 	"github.com/hewenyu/todo/ent/migrate"
 	"github.com/vektah/gqlparser/v2/ast"
+
+	_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
