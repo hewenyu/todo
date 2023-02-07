@@ -10,9 +10,7 @@ go mod init github.com/hewenyu/todo
 ## 表设计生成
 ```bash
 # 表原始model生成
-go run -mod=mod entgo.io/ent/cmd/ent init User
-# temple 模板表,里面更多的模板用于开发
-go run -mod=mod entgo.io/ent/cmd/ent init Temple
+go run -mod=mod entgo.io/ent/cmd/ent init User Temple
 ```
 
 ## 公共参数设计
